@@ -1,0 +1,112 @@
+body{
+ margin: 0;
+background: #c84848;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: #ffffff;
+background-color: rgb(188, 188, 188);
+
+}
+
+h1{
+ text-align: center;
+}
+   
+.container{
+position: relative;
+width: 320px;
+margin: 100px auto 0 auto;
+perspective: 900px;
+}
+
+
+.carrosel{
+position: absolute;
+width: 100%;
+height: 100%;
+transform-style: preserve-3d;
+animation: rotate360 30s infinite forwards linear;
+}
+
+.imagem{
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0,.4);
+    display:flex ;
+}
+
+.imagem span{
+    margin: auto;
+    font-size: lem;
+}
+
+@keyframes rotate360{
+ from{
+    transform: rotateY(0deg);
+ }
+
+ to{
+    transform: rotateY(-360deg);
+ }
+}
+
+.imagem:nth-child(1){
+    background-image:url(https://www.stockvault.net/data/2010/10/07/115280/preview16.jpg) ;
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2){
+    background-image: url(https://www.stockvault.net/data/2008/09/02/106231/preview16.jpg);
+    transform: rotateY(40deg) translateZ(430px
+    );
+}
+
+.imagem:nth-child(3){
+background-image: url(https://www.stockvault.net/data/2013/02/03/141419/preview16.jpg);
+transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4){
+    background-image: url(https://www.stockvault.net/data/2017/04/25/234779/preview16.jpg) ;
+    transform: rotateY(120deg) translateZ(430px
+    );
+}
+
+.imagem:nth-child(5){
+    background-image: url(https://www.stockvault.net/data/2010/02/04/113039/preview16.jpg);
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6){
+    background-image: url(https://www.stockvault.net/data/2011/02/06/117456/preview16.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7){
+background-image: url(https://www.stockvault.net/data/2011/02/06/117454/preview16.jpg);
+transform: rotateY(240deg)translateZ(430px) ;
+}
+
+.imagem:nth-child(8){
+    background-image: url(https://www.stockvault.net/data/2007/03/01/99589/preview16.jpg);
+transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(9){
+    background-image: url(https://www.stockvault.net/data/2007/03/01/99586/preview16.jpg);
+transform: rotateY(320deg) translateZ(430px);
+}
+
+    footer{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        bottom: 0vh;
+        margin-top: 580px;
+        background-color: #a7a8a8;
+        
+    
+}
